@@ -1,7 +1,9 @@
 @extends('layouts.base')
 @section('content')
-    <h1>INDEX - LANCAMENTOS </h1>
-    <h2> {{ Auth::user()->name }}</h2>
+    <h1>
+        <i class="bi bi-list-check">
+    </h1>
+
 
     {{-- alerts --}}
     @include('layouts.partials.alerts')
@@ -12,14 +14,15 @@
             <thead>
                 <caption>LISTA DE</caption>
                 <tr>
-                    <th>#</th>
-                    <th>Column 2</th>
-                    <th>Column 3</th>
+                    <th class="col-2">#</th>
+                    <th>Centro de Custo</th>
+                    <th>Total de Lançamentos</th>
                 </tr>
             </thead>
             <tbody class="table-group-divider">
+
                 <tr>
-                    <td scope="row" class="col-1">
+                    <td scope="row">
                         <div class="flex-column">
                             {{-- ver --}}
                             <a class="btn btn-success" href="#">
@@ -36,9 +39,12 @@
                             </button>
                         </div>
                     </td>
-                    <td>Item</td>
+                    <td>
+                        iiii
+                    </td>
                     <td>Item</td>
                 </tr>
+
             </tbody>
         </table>
     </div>

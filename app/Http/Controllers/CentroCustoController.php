@@ -12,9 +12,6 @@ use App\Models\{
 
 class CentroCustoController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
         $centroCustos = CentroCusto::orderBy('centro_custo')
